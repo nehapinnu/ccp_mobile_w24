@@ -10,31 +10,39 @@
     <title>Travel</title>
   </head>
   <body>
-      <header>
-        <a href="">Skip to Main Content</a>
+    <header>
+      <a href="#main" class="skip">Skip to Main Content</a>
       <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="pets.html">Pets</a></li>
-          <li><a href="recipes.html">Recipes</a></li>
-          <li><a href="travel.html">Travel</a></li>
+        <ul class="gridBar">
+          <li class="navBar"><a href="index.html" class="navColor">Home</a></li>
+          <li class="navBar"><a href="pets.html" class="navColor">Pets</a></li>
+          <li class="navBar">
+            <a href="recipes.html" class="navColor">Recipes</a>
+          </li>
+          <li class="navBar">
+            <a href="travel.html" class="active">Travel</a>
+          </li>
         </ul>
       </nav>
       <h1>Travel</h1>
     </header>
-    <main>
+    <main id="main">
       <div>
         <h2>Chiangmai, Thailand</h2>
-        <img
-          src="images/chiangmaigif.gif"
-          width="400"
-          alt="Chiangmai as a gif"
-        >
-        <img
-          src="images/chiangmai.jpeg"
-          width="400"
-          alt="Chiangmai as an image"
-        >
+        <div class = "photoGallery2">
+          <img
+            src="images/chiangmaigif.gif"
+            width="400"
+            alt="Chiangmai as a gif"
+            class="gallaryImage3"
+          >
+          <img
+            src="images/chiangmai.jpeg"
+            width="400"
+            alt="Chiangmai as an image"
+            class="gallaryImage3"
+          >
+        </div>
         <h3>Geographical Location: Asia</h3>
         <p>
           Chiang Mai, nestled in the lush hills of northern Thailand, is a city
@@ -62,64 +70,68 @@
           appreciate.
         </p>
         <h3>Photo Gallery</h3>
-        <figure>
-          <img
-            src="images/chiangmai1.jpeg"
-            width="200"
-            alt="colorful hot balloons in the heart of Chiang Mai
-"
-          >
-          <figcaption>
-            You can see hot balloons in Chiang Mai as well.
-          </figcaption>
-        </figure>
-        <figure>
-          <img
-            src="images/chiangmai2.jpeg"
-            width="200"
-            alt="several elephants and smiley volunteers in the forest"
-          >
-          <figcaption>
-            You can see cute elephants in Chiang Mai! Isn't that fun?!
-          </figcaption>
-        </figure>
-        <figure>
-          <img
-            src="images/chiangmai3.jpeg"
-            width="200"
-            alt="ancient temple of Chiang Mai"
-          >
-          <figcaption>
-            There are so many beautiful temples in Chiang Mai.
-          </figcaption>
-        </figure>
-        <figure>
-          <img
-            src="images/chiangmai4.jpeg"
-            width="200"
-            alt="several monks walk by the street"
-          >
-          <figcaption>Be respectful to the monks.</figcaption>
-        </figure>
-        <figure>
-          <img
-            src="images/chiangmai5.jpeg"
-            width="200"
-            alt="several delicious dishes from Chiang Mai"
-          >
-          <figcaption>
-            And don't forget to treat yourself with delicious Thai food!
-          </figcaption>
-        </figure>
+        <div class ="travelGallery">
+          <figure class="gallaryImage4">
+            <img
+              src="images/chiangmai1.jpeg"
+              width="200"
+              alt="colorful hot balloons in the heart of Chiang Mai"
+            >
+            <figcaption class = "caption">
+              You can see hot balloons in Chiang Mai as well.
+            </figcaption>
+          </figure>
+          <figure class="gallaryImage4">
+            <img
+              src="images/chiangmai2.jpeg"
+              width="200"
+              alt="several elephants and smiley volunteers in the forest"
+            >
+            <figcaption class = "caption">
+              You can see cute elephants in Chiang Mai! Isn't that fun?!
+            </figcaption>
+          </figure>
+          <figure class="gallaryImage4">
+            <img
+              src="images/temple.jpg"
+              width="200"
+              alt="ancient temple of Chiang Mai"
+            >
+            <figcaption class = "caption">
+              There are so many beautiful temples in Chiang Mai.
+            </figcaption>
+          </figure>
+          <figure class="gallaryImage4">
+            <img
+              src="images/chiangmai4.jpeg"
+              width="200"
+              alt="several monks walk by the street"
+            >
+            <figcaption class = "caption">Be respectful to the monks.</figcaption>
+          </figure>
+          <figure class="gallaryImage4">
+            <img
+              src="images/chiangmai5.jpeg"
+              width="200"
+              alt="several delicious dishes from Chiang Mai"
+            >
+            <figcaption class = "caption">
+              And don't forget to treat yourself with delicious Thai food!
+            </figcaption>
+          </figure>
+        </div>
       </div>
       <div>
         <h2>London, United Kingdom</h2>
-        <img src="images/giphy.gif" width="400" alt="London as a gif" >
-        <img
-          src="images/London_City_View.jpg"
-          width="400"
-          alt="Chiangmai as an image"
-        >
+        <div class = "photoGallery2">
+          <img src="images/giphy.gif" width="400" alt="London as a gif" class="gallaryImage3">
+          <img
+            src="images/London_City_View.jpg"
+            width="400"
+            alt="Chiangmai as an image"
+            class="gallaryImage3"
+          >
+        </div>
         <h3>Geographical Location: Europe</h3>
         <p>
           As one of the most iconic cities in the world, London carries a rich
@@ -140,46 +152,52 @@
           unrivaled blend of history and modernity.
         </p>
         <h3>Photo Gallery</h3>
-        <figure>
-          <img
-            src="images/London_Big_Ben.jpg"
-            width="200"
-            alt="This is the Big Ben in London"
-          >
-          <figcaption>
-            Big Ben stands tall as a testament to London's historical grandeur,
-            its chimes echoing tales of times gone by.
-          </figcaption>
-        </figure>
-        <figure>
-          <img
-            src="images/London_Natural_History_Museum.jpg"
-            width="200"
-            alt="This is the Natural History Museum in London"
-          >
-          <figcaption>The beautiful natural history museum</figcaption>
-        </figure>
-        <figure>
-          <img src="images/London_British_Museum.jpg" width="200" alt="The London British Meseum" >
-          <figcaption>the beautiful british museum</figcaption>
-        </figure>
-        <figure>
-          <img src="images/London_Station.jpg" width="200" alt="The station in London" >
-          <figcaption>the amazing london station</figcaption>
-        </figure>
+        <div class ="travelGallery">
+          <figure class="gallaryImage4">
+            <img
+              src="images/London_Big_Ben.jpg"
+              width="200"
+              alt="This is the Big Ben in London"
+            >
+            <figcaption class = "caption">
+              Big Ben stands tall as a testament to London's historical grandeur,
+              its chimes echoing tales of times gone by.
+            </figcaption>
+          </figure>
+          <figure class="gallaryImage4">
+            <img
+              src="images/London_Natural_History_Museum.jpg"
+              width="200"
+              alt="This is the Natural History Museum in London"
+            >
+            <figcaption class = "caption">The beautiful natural history museum</figcaption>
+          </figure>
+          <figure class="gallaryImage4">
+            <img src="images/London_British_Museum.jpg" width="200" alt="The London British Meseum" >
+            <figcaption class = "caption">the beautiful british museum</figcaption>
+          </figure>
+          <figure class="gallaryImage4">
+            <img src="images/londonStation.jpg" width="200" alt="The station in London" >
+            <figcaption class = "caption">the amazing london station</figcaption>
+          </figure>
+        </div>
       </div>
       <div>
         <h2>Monteverde, Costa Rica</h2>
-        <img
-          src="images/Monteverde.gif"
-          width="400"
-          alt="Monteverde as a gif"
-        >
-        <img
-          src="images/Monteverde_skyline.jpeg"
-          width="400"
-          alt="Monteverde as an image"
-        >
+        <div class = "photoGallery2">
+          <img
+            src="images/Monteverde.gif"
+            width="400"
+            alt="Monteverde as a gif"
+            class="gallaryImage3"
+          >
+          <img
+            src="images/Monteverde_skyline.jpeg"
+            width="400"
+            alt="Monteverde as an image"
+            class="gallaryImage3"
+          >
+        </div>
         <h3>Geographical Location: South America</h3>
         <p>
           Monteverde, Costa Rica is situated 4,662 feet above sea level.
@@ -196,50 +214,52 @@
           Monteverde. It's a truly beautiful place.
         </p>
         <h3>Photo Gallery</h3>
-        <figure>
-          <img
-            src="images/Monteverde_cloud_forest.jpeg"
-            width="200"
-            alt="Clouds rolling through a line of trees."
-          >
-          <figcaption>
-            You can hike trails and zipline through the Monteverde cloud
-            forests.
-          </figcaption>
-        </figure>
-        <figure>
-          <img
-            src="images/Monteverde_hanging_bridges.jpeg"
-            width="200"
-            alt="An image of a bridge hanging above the cloud forest canopy in Monteverde."
-          >
-          <figcaption>
-            Hanging bridges over the cloud forests allow for a birds-eye view.
-          </figcaption>
-        </figure>
-        <figure>
-          <img
-            src="images/Monteverde_hummingbirds.jpeg"
-            width="200"
-            alt="A hummingbird with green feathers drinking from a pink and orange flower."
-          >
-          <figcaption>
-            You can visit hummingbirds at Monteverde's Selvatura Park's
-            hummingbird garden, which exhibits over 14 different species of
-            hummingbird.
-          </figcaption>
-        </figure>
-        <figure>
-          <img
-            src="images/Monteverde_el_tigre_waterfalls.jpeg"
-            width="200"
-            alt="A person in red standing in front of one of El Tigre's four waterfalls."
-          >
-          <figcaption>
-            El Tigre Waterfalls is made up of four falls, which are connected by
-            trails and hanging bridges.
-          </figcaption>
-        </figure>
+        <div class ="travelGallery">
+          <figure class="gallaryImage4">
+            <img
+              src="images/Monteverde_cloud_forest.jpeg"
+              width="200"
+              alt="Clouds rolling through a line of trees."
+            >
+            <figcaption class = "caption">
+              You can hike trails and zipline through the Monteverde cloud
+              forests.
+            </figcaption class = "caption">
+          </figure>
+          <figure class="gallaryImage4">
+            <img
+              src="images/Monteverde_hanging_bridges.jpeg"
+              width="200"
+              alt="An image of a bridge hanging above the cloud forest canopy in Monteverde."
+            >
+            <figcaption class = "caption">
+              Hanging bridges over the cloud forests allow for a birds-eye view.
+            </figcaption>
+          </figure>
+          <figure class="gallaryImage4">
+            <img
+              src="images/Monteverde_hummingbirds.jpeg"
+              width="200"
+              alt="A hummingbird with green feathers drinking from a pink and orange flower."
+            >
+            <figcaption class = "caption">
+              You can visit hummingbirds at Monteverde's Selvatura Park's
+              hummingbird garden, which exhibits over 14 different species of
+              hummingbird.
+            </figcaption>
+          </figure>
+          <figure class="gallaryImage4">
+            <img
+              src="images/Monteverde_el_tigre_waterfalls.jpeg"
+              width="200"
+              alt="A person in red standing in front of one of El Tigre's four waterfalls."
+            >
+            <figcaption class = "caption">
+              El Tigre Waterfalls is made up of four falls, which are connected by
+              trails and hanging bridges.
+            </figcaption>
+          </figure>
+        </div>
       </div>
     </main>
   </body>

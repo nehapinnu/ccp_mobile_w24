@@ -1,3 +1,37 @@
+.skip {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: white;
+    padding: 8px 15px;
+    z-index: 100;
+    transition: top 0.3s ease;
+}
+
+.skip:focus {
+    top: 0;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+
+    .gallaryImage3[alt*="as a gif"] {
+        display: none;
+    }
+
+    .gallaryImage3[alt*="as an image"] {
+        display: block;
+    }
+}
+
+.active{
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: #000;
+    color: #fff;
+}
+
 .photoGallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -8,6 +42,37 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+}
+
+.travelGallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.gallaryImage4 {
+    width: 50%;
+    height: 70%;
+    display: block;
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #000;
+}
+
+.caption {
+    font-family: "Brush Script MT";
+    font-size: 15px;
+}
+
+.gallaryImage3 {
+    width: 80%;
+    height: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
 }
 
 .gallaryImage {
@@ -47,10 +112,12 @@
 
 .navColor {
     color: #A57DBB;
+    font-family: "Brush Script MT";
+    font-size: 25px;
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 70px;
     padding-top: 15px;
     text-align: center;
     font-family: "Copperplate";
@@ -63,14 +130,10 @@ h2 {
     padding-bottom: 15px;
     text-align: center;
     font-family: "marker felt";
-    color: #5FA66E;
+    color: #ca1f86;
     text-decoration: underline;
 }
 
-/* img {
-    max-width: 100%;
-    height: auto;
-} */
 
 .headerImage {
     width: 400px;
@@ -94,7 +157,15 @@ h2 {
 }
 
 p {
-font-family: "chalkduster";
+    font-family: "chalkduster";
+    text-align: left;
+    padding-top: 15px;
+    margin-left: 5px;
+    color: #474847;
+}
+
+.intro {
+    
     text-align: left;
     padding-top: 15px;
     margin-left: 5px;
@@ -114,7 +185,7 @@ h3 {
     padding-top: 15px;
     text-align: center;
     font-family: "marker felt";
-    color: #C765FF;
+    color: #1d7858;
     text-decoration: underline;
 }
 

@@ -15,9 +15,9 @@
       <nav>
         <ul class="gridBar">
           <li class="navBar"><a href="index.html" class="navColor">Home</a></li>
-          <li class="navBar"><a href="pets.html" class="active">Pets</a></li>
+          <li class="navBar"><a href="pets.html" class="navColor">Pets</a></li>
           <li class="navBar">
-            <a href="recipes.html" class="navColor">Recipes</a>
+            <a href="recipes.html" class="active">Recipes</a>
           </li>
           <li class="navBar">
             <a href="travel.html" class="navColor">Travel</a>
@@ -26,7 +26,7 @@
       </nav>
       <h1>Recipies</h1>
     </header>
-    <main>
+    <main id="main">
       <div>
         <h2>Spaghetti</h2>
         <p class="info" >Origin: Italian</p>
@@ -158,7 +158,7 @@
           >
         </p>
         <p>Category: Main Dish</p>
-        <img src="images/mac&cheese.jpg" width="400" alt="mac and cheese" />
+        <img src="images/mac&cheese.jpg" width="400" alt="mac and cheese" class="headerImageRec"/>
         <p>
           Macaroni and cheese, commonly known as mac & cheese, is a comfort food
           staple that has captured the hearts of people all over the world.
@@ -170,7 +170,7 @@
           gatherings.
         </p>
         <h3>Recipe Ingredients</h3>
-        <ol type="a">
+        <ol type="a" class = "ingredients">
           <li>Macaroni</li>
           <li>Butter and flour</li>
           <li>Milk</li>
@@ -179,7 +179,7 @@
           <li>Bread crumbs</li>
         </ol>
         <h3>Recipe Steps</h3>
-        <ol type="a">
+        <ol type="a" class = "ingredients">
           <li>
             Preheat oven to 375°. Grease a 13"x9" baking dish with butter. In a
             large pot of boiling salted water, cook macaroni, stirring
@@ -207,16 +207,18 @@
           </li>
         </ol>
         <h3>Additional Food Images</h3>
-        <img
-          src="images/mac&cheese2.jpg"
-          width="200"
-          alt="Instant cook mac and cheese, allows you to eat within five minutes."
-        />
-        <img
-          src="images/mac&cheese3.jpg"
-          width="200"
-          alt="Well-cooked mac and cheese with a full load of cheese."
-        />
+        <div class = "photoGallery2">
+          <img
+            src="images/mac&cheese2.jpg"
+            width="200"
+            alt="Instant cook mac and cheese, allows you to eat within five minutes."
+          class="gallaryImage2"/>
+          <img
+            src="images/mac&cheese3.jpg"
+            width="200"
+            alt="Well-cooked mac and cheese with a full load of cheese."
+          class="gallaryImage2"/>
+        </div>
       </div>
     </main>
   </body>
